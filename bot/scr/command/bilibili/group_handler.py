@@ -1,6 +1,5 @@
 from ncatbot.core import BotClient, GroupMessage, MessageChain, Video
 import urllib, json, httpx
-from bilibili_api import video
 import functions.sendMessage as sendMessage
 
 #QQ小程序签名认证以获取短分享网址

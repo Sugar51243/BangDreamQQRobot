@@ -1,4 +1,4 @@
-from ncatbot.core import BotClient, PrivateMessage, MessageChain, Record, Image
+from ncatbot.core import BotClient, PrivateMessage, MessageChain
 import functions.sendMessage as sendMessage, re
 import command.ygo.ygo as YGO
 

@@ -2,7 +2,7 @@ from ncatbot.core import BotClient, GroupMessage, MessageChain, Record, Image
 from functions.fileHandler import listFile, readFile, readJson, writeJson
 from functions.permission import registrationUpdate
 from functions.randomData import randomDetermination
-import functions.sendMessage as sendMessage, random, datetime, json
+import functions.sendMessage as sendMessage, random, datetime
 import re
 
 robotAcc = [3260850774, 3968200051, 1437848636]

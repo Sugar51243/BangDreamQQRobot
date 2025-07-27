@@ -16,12 +16,16 @@ async def handle_group(bot: BotClient, msg: GroupMessage, raw_message: str, be_a
     inputed_Command = re.findall(r'(\D+|\d+)', raw_message)
     if inputed_Command[0] == "自制":
         charID = inputed_Command[1].strip()
+        withMP3 = False
+        if command[-3:] == "带音乐":
+            charID = charID[:-3]
+            withMP3 = True
         if len(inputed_Command) <= 1:
             message = MessageChain(["参数缺失,可用参数:\n"])
             message += MessageChain(["[ID]\n"])
             await sendMessage.replyMsgToGroup(bot=bot,msg=msg, messageChain=message)
             return
-        await char.sreachSelfMakeChart(bot, msg, charID)
+        await char.sreachSelfMakeChart(bot, msg, charID, withMP3)
         return
     #查官谱
     if raw_message[0:2] == "官谱":

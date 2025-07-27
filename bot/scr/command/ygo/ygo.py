@@ -1,7 +1,7 @@
-import io, os, json, random, requests
+import os, json, random, requests
 from PIL import Image
 from datetime import datetime
-from ncatbot.core import MessageChain, At, Reply
+from ncatbot.core import MessageChain
 import functions.sendMessage as sendMessage
 from functions.fileHandler import readJson, writeJson
 
