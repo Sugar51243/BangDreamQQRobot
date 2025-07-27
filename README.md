@@ -178,3 +178,9 @@ YGO类功能为此机器人的副功能。主要目的是快速开启群赛，�
 [PIL](https://github.com/python-pillow/Pillow)<br>
 [httpx](https://github.com/encode/httpx)<br>
 [eyed3](https://github.com/nicfit/eyeD3)<br>
+main.py为程序主体，start-server.bat则用于公开机器人储存路径，用以提取音频URL。<br>
+启动机器人需要于补全运行库后运行main.py，并手动启动start-server.bat。<br>
+
+    start start-server.bat
+    python main.py
+    pause
