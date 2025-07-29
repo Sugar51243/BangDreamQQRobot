@@ -173,11 +173,18 @@ YGO类功能为此机器人的副功能。主要目的是快速开启群赛，�
 随机抽取随机数。
 
 # 部署
-本程序依赖 `NcatBot` `PIL` `httpx` `eyed3` 运行，请自行依次于环境补完运行库。<br>
+本程序依赖 `NcatBot` `PIL` `httpx` `eyed3` `bestdori-api` `bestdori-render` 运行，请自行依次于环境补完运行库。<br>
 [NcatBot](https://github.com/liyihao1110/NcatBot)<br>
 [PIL](https://github.com/python-pillow/Pillow)<br>
 [httpx](https://github.com/encode/httpx)<br>
 [eyed3](https://github.com/nicfit/eyeD3)<br>
+[bestdori-api](https://github.com/WindowsSov8forUs/bestdori-api)<br>
+[bestdori-render](https://github.com/zhaomaoniu/bestdori-render)<br>
+[nodejs](https://nodejs.org/)<br>
+
+    pip install ncatbot pillow httpx eyed3 bestdori-api bestdori-render setuptools aiohttp
+    npm install http-server -g
+
 main.py为程序主体，start-server.bat则用于公开机器人储存路径，用以提取音频URL。<br>
 启动机器人需要于补全运行库后运行main.py，并手动启动start-server.bat。<br>
 
